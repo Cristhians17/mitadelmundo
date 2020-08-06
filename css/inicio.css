@@ -1,0 +1,84 @@
+@font-face {
+    font-family: copperplate;
+    src: url(../fonts/Copperplate\ Gothic\ Bold\ Regular.ttf);
+  }
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: copperplate;
+}
+
+body {
+    background-image: url(../images/Inicio.jpg);
+    background-color: #ededed;
+    background-size: 100% 100%;
+    background-attachment: fixed; /* responsive */
+}
+
+#inicio a {
+    display: block;
+    width: 200px;
+    color: black;
+    background-color: #C3904D;
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    border: 3px solid black;
+    box-shadow: 4px 4px #333;
+    font-size: 30px;
+}
+
+#inicio a:hover {
+    background: rgba(139, 127, 100, 0.8);
+    color: #eee4e4;
+    border: 3px solid #e4dcdc;
+    box-shadow: 5px 5px #706e6e;
+}
+
+#inicio .contenedor {
+    position: absolute;    /* toma como referencia la posicion de la img */
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);    /* centra todo el contenedor con el texto */
+    color: #fff;
+}
+
+
+
+
+/* ///////////////////// */
+/* diseño responsive */
+
+/* 480px en adelante */
+
+@media (min-width:480px) {
+
+    #inicio a {
+        font-size: 21px;
+        width: 140px;
+    }
+
+}
+
+/* 768px en adelante */
+
+@media (min-width:768px) {
+    
+    #inicio a {
+        font-size: 25px;
+        width: 170px;
+    }
+
+}
+
+/* 1024px en adelante */
+
+@media (min-width:1024px) {
+    
+    #inicio a {
+        font-size: 30px;
+        width: 200px;
+    }
+
+}

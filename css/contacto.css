@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#barrac img {
+    width: 100%;
+    height: 35px;
+    margin-top: -100px;
+}
+
+#contacto p {
+    text-align: justify;
+    font-size: 22px;
+}
+
+#contacto h2 {
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 2px 2px #333;
+}
+
+#foto .contenedor img {
+    width: 600px;
+    height: 320px;
+    border-radius: 5px;
+}
+
+#foto .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contacto .form .form-header .form-label {
+    font-weight: normal;
+    color: #ff851b;
+    text-align: center;
+    font-size: 22px;
+    padding: 14px 0;
+}
+
+#contacto .form .form-header .form-label span {
+    color: #fff;
+}
+
+#contacto .form {
+    background: rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;      /* Centra el formulario en la pantalla */
+    padding: 11px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+#contacto .form .form-label {
+    display: block;       /* Cada elemento se ubica debajo de otro */
+    color: #fff;
+    font-size: 17px;
+    position: relative;
+    padding: 2px 0;
+}
+
+#contacto .form .form-text, .form-textarea {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ff851b;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 15px;
+    color: #fff;
+}
+
+#contacto .form .form-textarea {
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+#contacto .form .btn-submit {
+    width: 100%;
+    font-family: copperplate;
+    src: url(../fonts/Copperplate\ Gothic\ Bold\ Regular.ttf);
+    outline: none;
+    background: #ff851b;
+    font-size: 17px;
+    border: none;
+    padding: 7px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+#contacto .form .btn-submit:hover {
+    background: #f29718;
+}
+
+#mapa {
+    color: #fff;
+    text-align: center;
+}
+
+#mapa .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 19px;
+}
+
+#mapa h4 {
+    text-align: center;
+    color: #fff;
+    text-decoration-line: underline;
+}
+
+.info-map {
+    margin: 20px;
+}
+
+.info-map img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+
+
+
+
+/* ///////////////////// */
+/* diseño responsive */
+
+/* 480px en adelante */
+
+@media (min-width:360px) {
+
+    header h1 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    header h3 {
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+    #contacto {
+        width: 92%;
+        margin: auto;
+    }
+
+    #contacto p {
+        font-size: 16px;
+    }
+
+    #contacto h2 {
+        font-size: 28px;
+    }
+
+    #foto .contenedor img {
+        width: 98%;
+        height: 170px;
+    }
+
+    header label {
+        float: right;
+        font-size: 28px;
+        margin:-20px 4px;    /* margen del label */
+        cursor: pointer;
+    }
+
+}
+
+
+/* 768px en adelante */
+
+@media (min-width:768px) {
+
+    #contacto p {
+        font-size: 18px;
+    }
+
+    #contacto h2 {
+        font-size: 32px;
+    }
+
+    #foto .contenedor img {
+        width: 460px;
+        height: 215px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    header h3 {
+        font-size: 25px;
+        text-decoration: none;
+    }
+}
+
+
+/* 1024px en adelante */
+
+@media (min-width:1024px) {
+
+    #contacto p {
+        font-size: 20px;
+    }
+
+    #contacto h2 {
+        font-size: 35px;
+    }
+
+    #foto .contenedor img {
+        width: 600px;
+        height: 320px;
+    }
+
+    header h1 {
+        font-size: 32px;
+        margin-top: 0;
+    }
+
+    header h3 {
+        font-size: 27px;
+        text-decoration: none;
+    }
+}

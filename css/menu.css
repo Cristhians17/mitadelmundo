@@ -1,0 +1,79 @@
+/* checkbox */
+#menu-bar {
+    display: none;
+}
+
+
+/* label */
+header label {
+    float: right;
+    font-size: 28px;
+    margin: -19px 4px;    /* margen del label */
+    cursor: pointer;
+}
+
+
+/* area del menu */
+.menu-op {
+    /* display: none; */
+    position: absolute;
+    top: 65px;    /* el menu empieza desde 65px del principio de la pg */
+    left: 0;    /* el menu empieza desde el el principio de la pg */
+    width: 100%;
+    height: 100vh;    /* ocupa siempre el 100% del alto de la ventana */
+    background: rgba(201, 161, 77, 0.8);
+
+    transition: all 0.9s;    /* tiempo para mostrar o esconder el menu */
+    transform: translateX(-100%);    /* esconde todo el menu */
+}
+
+
+/* opcipnes menu */
+.menu-op a {
+    display: block;    /* ordena las ops del menu para abajo */
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;    /* 15px de cada lado */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 17px;
+}
+
+
+.menu-op a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
+/* mostrar o esconder menu */
+#menu-bar:checked ~ .menu-op {
+    transform: translateX(0%);    /* muestra el menu */
+}
+
+
+/* ///////////////////// */
+/* diseño responsive */
+
+
+/* 1024px en adelante */
+
+@media (min-width:1024px) {
+    .menu-op {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;    /* posiciona las opciones del menu sobre el banner */
+        margin-top: -28px;
+        background: none;
+    }
+
+    .menu-op a {
+        border: none;
+    }
+
+    header label {
+        display: none;
+    }
+}

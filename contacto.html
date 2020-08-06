@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo llegar</title>
+    <link rel='stylesheet' type='text/css' href='css/fontello.css'>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="icon" href="images/favicon-circle.ico" type="ico">
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+
+    <header>
+        <div class="contenedor">
+            <a href="index.html" style="color: #fff;">
+                <h1 class="icon-globe">Mitad Del Mundo°</h1><br/><br/>
+                <h3>&nbsp;&nbsp;&nbsp;Más Que Un Monumento"</h3>
+            </a>
+            <!-- Boton del menu -->
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-align-justify" for="menu-bar"></label>
+            <nav class="menu-op">
+                <a href="index.html">Inicio</a>
+                <a href="historia.html">Historia</a>
+                <a href="turisticos.html">Lugares Turísticos</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Cómo llegar</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- contenido principal de la web -->
+    <main>
+        
+        <section id="banner">
+            <img src="images/banner11.jpg" alt="historiabanner">
+            <div class="contenedor">
+                <h2>Entérate como puedes llegar</h2>
+                <p>Un lugar mágico por conocer</p>
+                <a href="#taxi">Enviar un mensaje</a>
+            </div>
+        </section>
+
+        <section id="barrac">
+            <img src="images/top-footer.png" alt="top">
+        </section>
+
+        <section id="contacto">
+            <div class="contenedor">
+
+            <h2>Línea de transporte urbano</h2>
+            <br/>
+            <p>Se puede tomar un bus de la línea "Mitad del Mundo" a lo largo de la Av. Occidental 
+                en sentido Sur – Norte.</p>
+            </div>
+        </section>
+
+        <section id="foto">
+            <div class="contenedor">
+                <article>
+                    <img src="images/Ruta1.jpeg" alt="monumento">
+                    <h4>Línea de transporte Mitad del Mundo</h4>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="contenedor">
+
+            <h2>Línea de transporte público</h2>
+            <br/>
+            <p>Se debe tomar el sistema "Metrobus" hacia el norte de Quito. en la estación final 
+                de la Ofelia debe tomar el bus integrado “la Mitad del Mundo” el cual por unos 
+                pocos centavos lo dejará justo en la entrada del monumento.</p>
+            </div>
+        </section>
+
+        <section id="foto">
+            <div class="contenedor">
+                <article>
+                    <img src="images/Ruta2.jpeg" alt="monumento">
+                    <h4>Línea de transporte Metrobus</h4>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="contenedor">
+
+            <h2>Transporte ejecutivo Taxi</h2>
+            <br/>
+            <p>Se puede tomar un taxi desde cualquier parte de la ciudad de Quito e indicar destino a Ciudad 
+                Mitad del Mundo.</p>
+            </div>
+        </section>
+
+        <section id="foto">
+            <div class="contenedor">
+                <article>
+                    <img src="images/Ruta3.jpeg" alt="monumento">
+                    <h4 id="taxi">Transporte ejecutivo</h4>
+                </article>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <span class="linea"></span>
+        </section>
+
+        <section id="contacto">
+            <div class="contenedor">
+
+            <h2>Contáctanos</h2>
+            <br/>
+                
+                <form action="enviar.php" method="post" class="form">
+                    <div class="form-header">
+                        <label class="form-label">C<span>ontacto</span></label>
+                        <br/>
+                    </div>
+
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" name="nombre" class="form-text" placeholder="Escriba su nombre..." required>
+
+                    <label for="correo" class="form-label">e-mail:</label>
+                    <input type="email" name="correo" class="form-text" placeholder="Escriba su dirección..." required>
+
+                    <label for="telefono" class="form-label">Teléfono:</label>
+                    <input type="text" name="telefono" class="form-text" placeholder="Escriba su teléfono...">
+
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea name="mensaje" class="form-textarea" cols="30" rows="10" 
+                    placeholder="Aquí escriba su mensaje..." required></textarea>
+
+                    <input type="submit" class="btn-submit" value="Enviar" id="boton">
+                </form>
+
+            </div>
+
+            <br/>
+            <br/>
+
+        </section>
+
+        <section id="mapa">
+            <div class="contenedor">
+                <div class="info-map">
+                    <a href="https://www.google.com/maps/place/Ciudad+Mitad+del+Mundo/@-0.0022524,-78.4580784,17z/data=!3m1!4b1!4m5!3m4!1s0x91d5881ef89bad91:0xb2e1699b00a1a9b8!8m2!3d-0.0022524!4d-78.4558897" 
+                    target="_blank">
+                        <img src="images/MapaDelSitio.png" alt="mapa">
+                        <h4>Ver mapa del sitio</h4>
+                    </a>
+                </div>
+            </div>
+
+            <br/>
+
+        </section>
+
+        <section id="barra">
+            <img src="images/top-footer.png" alt="top">
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p class="copy">Derechos Reservados &copy; 2020</p>
+            <div class="sociales">
+                <a href="https://www.facebook.com/vitrina.turistica.75" target="_blank" class="icon-facebook-circled"></a>
+                <a href="#" class="icon-twitter"></a>
+                <a href="https://youtu.be/bXpPuDUKY94" target="_blank" class="icon-youtube"></a>
+                <a href="https://wa.me/593988615351" target="_blank" class="icon-whatsapp"></a>
+                <a href="https://www.google.com/maps/place/Ciudad+Mitad+del+Mundo/@-0.0022524,-78.4580784,17z/data=!3m1!4b1!4m5!3m4!1s0x91d5881ef89bad91:0xb2e1699b00a1a9b8!8m2!3d-0.0022524!4d-78.4558897" 
+                    target="_blank" class="icon-location-1"></a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
